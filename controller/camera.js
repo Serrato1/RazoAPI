@@ -72,7 +72,6 @@ module.exports={
         let apiUrl = `http://api.prosperent.com/api/search?query=${extractTextLines}&api_key=${apiKeyProsperent}`
 
         // let apiUrl = `http://api.prosperent.com/api/search?query=${labelApi}+${extractTextLines}&api_key=${apiKeyProsperent}`
-        // let apiUrl = `http://api.prosperent.com/api/search?query=electronic+${extractTextLines}&api_key=${apiKeyProsperent}`
         axios.get(apiUrl)
         .then((result)=>{
           console.log('API CALL ', apiUrl)
