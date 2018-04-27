@@ -67,7 +67,7 @@ module.exports={
           extractedTextLines = 'none';
         }
         // let labelApi = label[0].description.replace(' ', '+');
-        let labelApi = label[0].description.split(' ')[0]
+        // let labelApi = label[0].description.split(' ')[0] ? 
         console.log('extractedTextLines = ', extractTextLines);
         let apiUrl = `http://api.prosperent.com/api/search?query=${extractTextLines}&api_key=${apiKeyProsperent}`
 
